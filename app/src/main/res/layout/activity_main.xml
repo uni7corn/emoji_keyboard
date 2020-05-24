@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.effective.android.panel.view.PanelSwitchLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:animationSpeed="standard"
+    tools:context=".MainActivity">
+
+    <!-- 内容区域 -->
+    <!-- edit_view 指定一个 EditText 用于输入 ，必须项-->
+    <!-- empty_view 指定用户点击该 ID 对应的 View 时实现面板或者输入法隐藏，非必须项 -->
+    <com.effective.android.panel.view.content.ContentLinearContainer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:linear_edit_view="@id/et_msg">
+
+        <com.example.emojikeyboard.keyboard.emoji.CusRecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.example.emojikeyboard.keyboard.input.ChatInputView
+            android:id="@+id/chat_input_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50" />
+
+    </com.effective.android.panel.view.content.ContentLinearContainer>
+
+    <!-- 面板区域，仅能包含PanelView-->
+    <com.effective.android.panel.view.PanelContainer
+        android:id="@+id/panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 每一项面板 -->
+        <!-- panel_layout 用于指定面板该 ID 对应的布局 ，必须项-->
+        <!-- panel_trigger 用于用户点击该 ID 对应的 View 时切换到该面板 -->
+        <!-- panel_toggle  用于当该面板显示时 ，用户再次点击 panel_trigger 对应的 View 时是否回切输入法-->
+        <com.effective.android.panel.view.PanelView
+            android:id="@+id/panel_emotion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:panel_layout="@layout/panel_emotion_layout"
+            app:panel_trigger="@id/iv_face" />
+
+        <com.effective.android.panel.view.PanelView
+            android:id="@+id/panel_addition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:panel_layout="@layout/panel_add_layout"
+            app:panel_trigger="@id/iv_more" />
+
+    </com.effective.android.panel.view.PanelContainer>
+</com.effective.android.panel.view.PanelSwitchLayout>

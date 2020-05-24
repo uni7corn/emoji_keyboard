@@ -1,0 +1,4 @@
+//include ':panel-kotlin'
+include ':panel'
+include ':app'
+rootProject.name = "emoji_keyboard"

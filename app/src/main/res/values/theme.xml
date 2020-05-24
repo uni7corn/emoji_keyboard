@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.MaterialComponents">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/color_b1_dark</item>
+        <item name="android:navigationBarColor">@color/color_b1_dark</item>
+        <!--        <item name="android:windowAnimationStyle">@style/AnimationStyle</item>-->
+        <item name="android:textCursorDrawable">@drawable/text_cursor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_t1_dark</item>
+        <item name="hintTextColor">@color/color_t3_dark</item>
+        <!--        <item name="android:textColorHighlight">@color/color_b6</item>-->
+        <!--        <item name="android:textSelectHandleLeft">@android:drawable/text_select_handle_left_mtrl_alpha</item>-->
+        <!--        <item name="android:textSelectHandleRight">@android:drawable/text_select_handle_right_mtrl_alpha</item>-->
+        <!--        <item name="android:textSelectHandle">@android:drawable/text_select_handle_middle_mtrl_alpha</item>-->
+        <!--        <item name="android:textSelectHandleWindowStyle">@android:style/Widget.TextSelectHandle</item>-->
+        ————————————————
+        <!--        <item name="buttonStyle">@style/Widget.MaterialComponents.Button</item>-->
+    </style>
+
+    <style name="BaseAppTheme.TranslucentStatus">
+        <item name="android:statusBarColor">@color/color_transparent</item>
+        <item name="android:windowOverscan">true</item>
+    </style>
+
+    <!--默认的 activity 切换的动画-->
+    <!--    <style name="AnimationStyle" parent="@android:style/Animation.Activity">-->
+    <!--        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>-->
+    <!--        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>-->
+    <!--        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>-->
+    <!--        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>-->
+    <!--    </style>-->
+
+
+    <style name="base_dialog">
+        <item name="android:windowMinWidthMinor">90%</item> <!-- 宽度屏占比 -->
+        <!-- 默认背景是白色的圆角矩形，改为透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item> <!-- 默认平铺在界面顶部，为true之后会悬浮在中间，有阴影 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="LoadingDialog">
+        <!-- 默认背景是白色的圆角矩形，改为透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item> <!-- 默认平铺在界面顶部，为true之后会悬浮在中间，有阴影 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!--<item name="android:backgroundDimEnabled">false</item>-->
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BaseBottomSheetStyle</item>
+    </style>
+
+    <style name="BaseBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/color_transparent</item>
+    </style>
+
+
+</resources>

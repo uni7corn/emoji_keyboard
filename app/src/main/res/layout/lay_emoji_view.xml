@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.emojikeyboard.keyboard.emoji.EmojiTabLayout
+        android:id="@+id/emoji_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:background="@color/color_t4_dark" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/emoji_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_32"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/space_32"
+            android:layout_height="@dimen/space_32"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/space_10"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_emoji_delete"
+            tools:ignore="RtlHardcoded" />
+    </FrameLayout>
+
+</LinearLayout>

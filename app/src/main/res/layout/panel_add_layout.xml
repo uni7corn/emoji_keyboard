@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_142">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@id/tv_photo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv_take_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_chat_more_album"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_album"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iv_photo"
+        app:layout_constraintRight_toRightOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/iv_photo"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <ImageView
+        android:id="@+id/iv_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/iv_photo"
+        app:layout_constraintLeft_toRightOf="@id/iv_photo"
+        app:layout_constraintRight_toLeftOf="@id/iv_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_take_photo"
+        app:layout_constraintTop_toTopOf="@id/iv_photo"
+        app:srcCompat="@drawable/ic_chat_more_photograph"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <TextView
+        android:id="@+id/tv_take_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iv_take_photo"
+        app:layout_constraintRight_toRightOf="@id/iv_take_photo"
+        app:layout_constraintTop_toBottomOf="@id/iv_take_photo"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/iv_take_photo"
+        app:layout_constraintLeft_toRightOf="@id/iv_take_photo"
+        app:layout_constraintRight_toLeftOf="@id/iv_voice_call"
+        app:layout_constraintTop_toBottomOf="@id/tv_location"
+        app:layout_constraintTop_toTopOf="@id/iv_take_photo"
+        app:srcCompat="@drawable/ic_chat_more_location"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iv_location"
+        app:layout_constraintRight_toRightOf="@id/iv_location"
+        app:layout_constraintTop_toBottomOf="@id/iv_location"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <ImageView
+        android:id="@+id/iv_voice_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_location"
+        app:layout_constraintLeft_toRightOf="@id/iv_location"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_voice_call"
+        app:layout_constraintTop_toTopOf="@id/iv_location"
+        app:srcCompat="@drawable/ic_chat_more_voice_call"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <TextView
+        android:id="@+id/tv_voice_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voice_call"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/iv_voice_call"
+        app:layout_constraintRight_toRightOf="@id/iv_voice_call"
+        app:layout_constraintTop_toBottomOf="@id/iv_voice_call"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
