@@ -1,5 +1,4 @@
 ## a powerful emoji keyboard
----
 
 ## preview
 ---
